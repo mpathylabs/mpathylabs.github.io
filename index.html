@@ -4,23 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-        }
-        h1 {
-            font-size: 48px;
-            color: #333;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/bjs7pxz.css"> <!-- Adobe Fonts Link -->
 </head>
 <body>
-    <h1>Coming Soon</h1>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/20240723_mpathylogo_horizontal-alpha_DarkBG8.png" alt="Mpathy Labs Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/company/mpathy-labs" target="_blank">
+                            <img src="images/LI-In.png" alt="LinkedIn" class="linkedin-icon">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <video autoplay muted loop id="bg-video">
+            <source src="images/AIGirlEYE_AnimatedInOut2.webm" type="video/webm">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="content">
+            <div class="hero-text">
+                <h1 class="custom-font">The Future of Work is AI</h1>
+                <p class="custom-paragraph">At Mpathy Labs, we're building the "Workforce of the Future", where photorealistic, natural, and autonomous digital humans will transform the way you shop, dine, and more. Our mission is to humanize AI. COMING SOON.</p>
+                <!-- <button class="notify-button">Notify Me</button> -->
+            </div>
+        </div>
+    </section>
 </body>
 </html>
