@@ -33,7 +33,6 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
     margin-left: 20px;
 }
 
@@ -44,11 +43,9 @@ nav ul li a {
 .linkedin-icon {
     width: 24px;
     height: 24px;
-    /* display: block; */
     background-color: #1a1a1a;
     border-radius: 10%;
     padding: 5px;
-    /* box-shadow: 0 0 5px rgba(0,0,0,0.5); */
 }
 
 .hero {
@@ -93,7 +90,7 @@ nav ul li a {
     margin-bottom: 20px;
     font-family: "greycliff-cf", sans-serif;
     text-align: left;
-    color:#E5D5BA;
+    color: #E5D5BA;
 }
 
 .hero-text p.custom-paragraph {
@@ -102,7 +99,7 @@ nav ul li a {
     font-weight: 300;
     font-style: normal;
     text-align: left;
-    color:#CDCDCD;
+    color: #CDCDCD;
 }
 
 .hero-text p {
@@ -121,9 +118,78 @@ nav ul li a {
     font-family: 'greycliffcf-cf', sans-serif;
     cursor: pointer;
     border-radius: 50px;
-    /* width: 200px; */
     height: 40px;
     text-align: center;
     color: #383838;
     background-color: #93BBC3;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: row;
+        align-items: flex-start;
+        align-items: center;
+    }
+
+    .logo img {
+        height: auto;
+        width: 200px;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: flex-end; /* Aligns the nav to the right */
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .content {
+        padding-left: 20px;
+    }
+
+    .hero-text {
+        max-width: 90%;
+    }
+
+    .hero-text h1.custom-font {
+        font-size: 35px;
+    }
+
+    .hero-text p.custom-paragraph {
+        font-size: 20px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .hero-text button.notify-button {
+        width: auto;
+        height: auto;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-text h1.custom-font {
+        font-size: 30px;
+    }
+
+    .hero-text p.custom-paragraph {
+        font-size: 18px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .hero-text button.notify-button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
 }
